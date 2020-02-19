@@ -1,0 +1,37 @@
+\documentclass{SA367Spring2020}
+
+\begin{document}
+
+\title{Lesson 8. Drafting a Fantasy Basketball Team}
+
+\maketitle
+
+\section*{The problem}
+
+You're preparing for your upcoming fantasy basketball draft. You wonder:
+what is the best possible team you can draft?
+You have the following data:
+
+\begin{itemize}[topsep=0ex,parsep=0.5ex]
+  \item Projected \textbf{auction prices} for each player in the NBA.
+  \item The \textbf{z-score} for each player: the sum of the number of
+    standard deviations above the mean in the following 9 categories:
+    \begin{enumerate}[nolistsep]
+      \item points per 36 minutes
+      \item 3 point field goals made per 36 minutes
+      \item number of rebounds per 36 minutes
+      \item number of assists per 36 minutes
+      \item number of steals per 36 minutes
+      \item number of blocks per 36 minutes
+      \item \emph{negative} of the number of turnovers per 36 minutes
+      \item field goal percentage
+      \item free throw percentage
+    \end{enumerate}
+\end{itemize}
+
+Your roster must have exactly 12 players, and you have a budget of \$50.
+You want to maximize the total z-score of your team.
+Formulate this problem as a dynamic program by giving its
+shortest/longest path representation.
+
+\end{document}
